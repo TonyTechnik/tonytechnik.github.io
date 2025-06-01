@@ -76,4 +76,14 @@ animation: FadeOut 5s ease forwards;
     audio.play();
   }
 </script>
+
+<script>
+  window.addEventListener("load", () => { // Tells the loading screen to go fuck itself
+    const loadingScreen = document.querySelector(".LoadingScreen");
+
+    loadingScreen.addEventListener("animationend", () => {
+      loadingScreen.remove();
+    });
+  });
+</script>
 </html>
