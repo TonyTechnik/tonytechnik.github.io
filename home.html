@@ -6,24 +6,65 @@
     <title>Tony Home Page</title>
 </head>
 <body>
-    <img src="https://media1.tenor.com/m/lmVJm3U8PwEAAAAC/arf-bark.gif" alt="Pissed Off Asuka Gif" class="PlaceHolderImage">
+<div class="LoadingScreen"></div>
 
-    <p>
-        This website is currently under construction. Please come back later. Love, Tony
+<div class="flex-wrapper">
+    <div class="mainPageContainer">
+    <h1>Welcome to my Website!</h1>
+
+    <p>Hello! My website is currently under construction, and won't be ready for quite some time! In the mean time, enjoy some lovely aero!
+
+        -TonyTechnic
     </p>
+    </div>
+</div>
 </body>
 
 <style>
-    p {
-        color:red;
-        text-align: center;
-    }
-    .PlaceHolderImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    body {
-        background-image: linear-gradient(to left, black, gray);
-    }
+html, body {
+    height:100%;
+    margin: 0;
+}
+body {
+    background-image: url("https://files.catbox.moe/8guzso.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPageContainer {
+    background-color: rgba(233, 248, 243, 0.603);
+    width: 650px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:rgb(32, 32, 32);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
 </style>
+
+<style>
+.LoadingScreen {
+position: fixed;
+top: 0; left: 0;
+width: 100vh;
+height: 100vh;
+background: url("https://files.catbox.moe/qhd05t.gif");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+animation: FadeOut 5s ease forwards;
+}
+@keyframes FadeOut {
+    from {opacity: 1; }
+    to {opacity: 0; }
+}
+</style>
+
+<iframe width="0" height="0" src="https://www.youtube.com/embed/XD?autoplay=1&loop=1&playlist=rOKOUTeyafuCrs96&controls=0" frameborder="0" allow="autoplay" loading="lazy"></iframe>
+</html>
