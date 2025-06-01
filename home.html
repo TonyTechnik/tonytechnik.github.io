@@ -66,8 +66,14 @@ animation: FadeOut 5s ease forwards;
 }
 </style>
 
+<button onclick="playMusic()">Play Music</button>
+
 <script>
-    var audio = new Audio("https://tonytechnik.github.io/audio/AeroBGMusic.mp3");
-audio.play();
+  var audio = new Audio("https://tonytechnik.github.io/audio/AeroBGMusic.mp3");
+  audio.loop = true;
+
+  function playMusic() {
+    audio.play();
+  }
 </script>
 </html>
