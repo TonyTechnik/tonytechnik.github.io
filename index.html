@@ -16,6 +16,7 @@
             <li><a href="placeholder">Gaming</a></li>
             <li><a href="placeholder">Anime</a></li>
             <li><a href="placeholder">Blog</a></li>
+            <li><a href="#" id="soundLink">Pingas</a></li>
         </ul>
     </div>
 
@@ -128,4 +129,14 @@
     }
 </style>
 
+<script>
+    window.onload = () => {
+    const clickSound = new Audio('https://tonytechnik.github.io/audio/pingas.mp3');
+
+    document.getElementById('soundLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        clickSound.play(); 
+    });
+};
+</script>
 </html>
